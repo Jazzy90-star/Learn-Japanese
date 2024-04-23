@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://ae01.alicdn.com/kf/S4dc2ea4aecb24e2bbbcb99f0f753e555G/Japanese-Sakura-Vinly-Background-Photography-Cherry-Blossoms-Mount-Fuji-Japan-Wall-Hangings-for-Bedroom-Living-Room.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form-container,
+login-form,
+register-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(252, 229, 248, 0.7);
+  width: auto;
+  height: auto;
+  margin: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  border: none;
+  background-color: #ffd6de;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.link-btn {
+  background: none;
+  background-image: white;
+  text-decoration: underline;
+}
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+.right-logo,
+.smile {
+  margin-right: 15px;
+}
+h1 {
+  font-family: "Julee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-family: "Julee", cursive;
+}
+h3 {
+  text-align: center;
+}
+.flashcard {
+  background-color: rgba(252, 229, 248, 0.7);
+  border: 1px solid rgba(252, 229, 248, 0.7);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.character {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.pronunciation {
+  font-style: italic;
+}
+
+.example {
+  margin-top: 10px;
+}
+.container {
+  background-color: rgba(252, 229, 248, 0.7);
+  border: 1px solid rgba(252, 229, 248, 0.7);
+  margin: 25px auto;
+  align-items: center;
+
+  padding: 15px;
+}
+#image1 {
+  max-width: 350px;
+}
+#image2 {
+  max-width: 350px;
+}
+
+#image3 {
+  max-width: 500px;
+}
+
+p {
+  text-align: center;
+  padding-top: 25px;
+  font-weight: 500;
+}
+.black-buttons .carousel-control-prev,
+.black-buttons .carousel-control-next {
+  background-color: #d68b8b;
+}
+
+.black-buttons .carousel-control-prev:hover,
+.black-buttons .carousel-control-next:hover {
+  background-color: rgba(252, 229, 248, 0.7);
+}
+.quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
