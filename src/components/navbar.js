@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link, useNavigate } from "react-router-dom";
 
 function Pages({ loggedInUser }) {
@@ -42,19 +41,6 @@ function Pages({ loggedInUser }) {
           <Nav.Link as={Link} to="/Resource">
             Bonus Resources
           </Nav.Link>
-        </Nav>
-        <p> Welcome {loggedInUser != null ? loggedInUser.UserName : "?"}</p>
-        <Nav>
-          <NavDropdown
-            title={loggedInUser && loggedInUser.UserName}
-            id="basic-nav-dropdown"
-          >
-            <NavDropdown.Item as={Link} to="/profile">
-              Profile
-            </NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
-          </NavDropdown>
         </Nav>
       </Navbar>
     </Container>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Hiragana from "../utility/hiragana";
-import { get } from "jquery";
 import Container from "react-bootstrap/Container";
 
 const Quiz = () => {
